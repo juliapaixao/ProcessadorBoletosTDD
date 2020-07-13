@@ -14,7 +14,8 @@ public class ProcessadorBoletosTest {
 		Boleto b = new Boleto();
 		
 		List<Boleto> listaBoleto = new ArrayList<>();
-		boolean atual = p.processa(true);
+		
+		boolean atual = p.processa(f, listaBoleto);
 		
 		assertTrue(atual);
 	}
