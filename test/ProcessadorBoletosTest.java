@@ -8,6 +8,7 @@ public class ProcessadorBoletosTest {
 	public void verificaPagamento1() {
 		ProcessadorBoleto p = new ProcessadorBoleto();
 		Fatura f = new Fatura();
+		Boleto b = new Boleto();
 		
 		boolean esperado = true;
 		boolean atual = p.processa(true);
